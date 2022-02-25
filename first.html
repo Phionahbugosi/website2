@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<script>
+    function myfunction(){
+    let x=document.forms["myform"]["fname"].value;
+    let y=document.forms["myform"]["password"].value;
+    if(x==""&& y==""){
+        alert("name should be filled in");
+        return false;
+    }
+    }
+
+
+</script>
+<body>
+    <div class="container d-flex justify-content-center align-items-center style="min-height:100vh">
+<div class="col-lg-1 col-offset-6 centered">
+    <div class="row">
+        <div class="mb-3">
+    <form name="myform"   class="border shadow p-3 rounded" style="width: 450px;"action="" onsubmit="return myfunction()" method="post">
+        <div class="mb-3">
+        name:<input type="text" name="fname" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        password:<input type="password" name="password" class="form-control"required>
+    </div>
+        <input type="submit" value="submit">
+    </div>
+
+</div>
+    </form>
+    </div>
+    </div>
+
+
+</body>
+</html>
